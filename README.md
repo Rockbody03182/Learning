@@ -80,12 +80,11 @@ $ npm run dev
 ├── README.md
 ├── javascript : 자바스크립트
 │   ├── grammar : 문법
-│   ├── react-setting : 리액트 초기 셋팅
-│   │   └── 참고사이트 :https://poiemaweb.com/
 │   └── test
 ├── react : 리액트
 │   ├── grammar : 문법
-│   ├── react-setting
+│   ├── react-typescript-webpack-setting
+│   │   └── 참고사이트 :https://poiemaweb.com/
 │   └── test
 └── front
 ```
