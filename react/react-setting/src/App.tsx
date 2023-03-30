@@ -1,4 +1,4 @@
 const App = () => {
-  return <div>Hello Hojin</div>;
+  return <div>Hello world</div>;
 };
 export default App;
