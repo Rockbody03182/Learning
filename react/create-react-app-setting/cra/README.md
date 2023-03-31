@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# react18 + webpack5 + typescript Boiler plate
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+리액트18 + 웹팩5 + 타입스크립트를 이용한 스타터킷입니다.<br>
+정말 아무것도 없는 깔끔한 스타터 킷입니다.<br>
+웹팩 최적화와 진짜 기본 셋팅만 되어 있습니다.<br>
 
-## Available Scripts
+### 최초 다운로드 후 해야할 것들 🐈
 
-In the project directory, you can run:
+1. npm install -g yarn (yarn 설치)
+2. yarn install(node_modules 다운로드)
+3. yarn dev(실행 (개발용)-config/webpack.dev.js 기반)
+4. yarn build(빌드 (운영용)-config/webpack.prod.js 기반)
 
-### `npm start`
+### 추천하는 설치 할만한 것들 🐈
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- styled-components / Emotion / TailWind (스타일링)
+- redux / recoil(추천) / mobx / Jotai / Zustand ( Client 상태관리)
+- react Query (Server 상태관리)
+- axios(API 통신)
+- lodash-es(자바스크립트 라이브러리(객체,배열,구조 변환 등))
+- dayjs(날짜)
+- immer(불변성)
+- jest & @Testing-library/react (테스트)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 아키텍쳐
 
-### `npm test`
+### 디렉토리 구조
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+  ├─ config
+  │   ├─webpack.common.js
+  │   ├─webpack.dev.js
+  │   └─webpack.prod.js
+  ├─ node_modules
+  ├─ public
+  │   └─index.html
+  ├─ src
+  │   ├─App.tsx
+  │   └─index.tsx
+  ├─ .babelrc
+  ├─ package.json
+  ├─ tsconfig.json
+  └─ yarn.lock
+```
